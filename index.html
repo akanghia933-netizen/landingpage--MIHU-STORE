@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIHU - Áo Dài Truyền Thống | Giữ Hồn Việt - Tôn Vinh Nét Đẹp Việt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gold: #D4AF37;
+            --light-gold: #F3E5AB;
+            --dark-gold: #997A15;
+            --bg-cream: #FCF9F2;
+            --text-dark: #2C2C2C;
+            --accent-pink: #E8C5C8;
+            --accent-red: #A32A29;
+            --white: #ffffff;
+            --shadow-subtle: 0 10px 30px rgba(0,0,0,0.06);
+            --transition-smooth: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(252, 249, 242, 0.96);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 7%;
+            transition: var(--transition-smooth);
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary-gold);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.35);
+            transition: var(--transition-smooth);
+        }
+
+        .logo-area:hover .logo-img {
+            transform: scale(1.05) rotate(3deg);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text .brand-name {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--dark-gold);
+            letter-spacing: 2.5px;
+            line-height: 1.1;
+            font-family: 'Playfair Display', serif;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .logo-text .brand-sub {
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #8c734b;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 26px;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        nav ul li {
+            white-space: nowrap;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 14.5px;
+            position: relative;
+            padding-bottom: 4px;
+            transition: var(--transition-smooth);
+            white-space: nowrap;
+        }
+
+        /* Đảm bảo màn hình máy tính vừa và nhỏ không bị ép chữ xuống hàng */
+        @media (max-width: 1200px) and (min-width: 769px) {
+            header {
+                padding: 10px 3%;
+            }
+            nav ul {
+                gap: 16px;
+            }
+            nav ul li a {
+                font-size: 13.5px;
+            }
+            .btn-nav {
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+            .header-hotline {
+                padding: 5px 12px;
+            }
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-gold);
+            transition: var(--transition-smooth);
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-gold);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .header-hotline {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            padding: 7px 16px;
+            border-radius: 30px;
+            background: rgba(212, 175, 55, 0.12);
+            border: 1px solid rgba(212, 175, 55, 0.45);
+            transition: var(--transition-smooth);
+        }
+
+        .header-hotline:hover {
+            background: var(--primary-gold);
+            border-color: var(--primary-gold);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .header-hotline .hotline-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--primary-gold);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            transition: var(--transition-smooth);
+        }
+
+        .header-hotline:hover .hotline-icon {
+            background: #fff;
+            color: var(--dark-gold);
+        }
+
+        .header-hotline .hotline-info {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            line-height: 1.15;
+        }
+
+        .header-hotline .hotline-label {
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: #8c734b;
+            font-weight: 600;
+        }
+
+        .header-hotline:hover .hotline-label {
+            color: #fff;
+        }
+
+        .header-hotline .hotline-number {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--dark-gold);
+            letter-spacing: 0.5px;
+        }
+
+        .header-hotline:hover .hotline-number {
+            color: #fff;
+        }
+
+        .hero-hotline-note {
+            margin-top: 25px;
+            font-size: 14.5px;
+            color: var(--light-gold);
+            letter-spacing: 0.5px;
+        }
+
+        .hero-hotline-note i {
+            margin-right: 6px;
+            color: var(--primary-gold);
+        }
+
+        .hero-hotline-note a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            transition: var(--transition-smooth);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .hero-hotline-note a:hover {
+            color: var(--light-gold);
+            background: rgba(212, 175, 55, 0.2);
+        }
+
+        /* Floating Quick Call Widget */
+        .floating-hotline {
+            position: fixed;
+            bottom: 28px;
+            left: 28px;
+            z-index: 1500;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .floating-hotline .hotline-pulse {
+            position: absolute;
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.45);
+            animation: pulseRing 1.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+            pointer-events: none;
+            left: -5px;
+            top: -5px;
+        }
+
+        .floating-hotline .hotline-circle {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e5c365, #b88a1a);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 21px;
+            box-shadow: 0 8px 25px rgba(184, 138, 26, 0.5);
+            position: relative;
+            z-index: 2;
+            animation: phoneShake 2.5s ease-in-out infinite;
+            border: 2px solid #fff;
+        }
+
+        .floating-hotline .hotline-floating-text {
+            background: #1e1b18;
+            color: var(--light-gold);
+            padding: 9px 20px 9px 22px;
+            border-radius: 0 25px 25px 0;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-left: -12px;
+            z-index: 1;
+            border: 1.5px solid var(--primary-gold);
+            border-left: none;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+            transition: var(--transition-smooth);
+            white-space: nowrap;
+        }
+
+        .floating-hotline:hover .hotline-circle {
+            transform: scale(1.08);
+        }
+
+        .floating-hotline:hover .hotline-floating-text {
+            background: var(--primary-gold);
+            color: #fff;
+        }
+
+        @keyframes pulseRing {
+            0% { transform: scale(0.9); opacity: 0.85; }
+            50% { transform: scale(1.35); opacity: 0.3; }
+            100% { transform: scale(1.6); opacity: 0; }
+        }
+
+        @keyframes phoneShake {
+            0%, 100% { transform: rotate(0deg); }
+            10%, 30% { transform: rotate(-15deg); }
+            20%, 40% { transform: rotate(15deg); }
+            50% { transform: rotate(0deg); }
+        }
+
+        .btn-nav {
+            padding: 9px 22px;
+            font-size: 14px;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            color: var(--dark-gold);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 130px 20px 70px;
+            background: linear-gradient(rgba(20, 16, 12, 0.45), rgba(20, 16, 12, 0.65)), url('images/mau-5-trang-non-la.jpg') no-repeat center 20%/cover;
+            color: #fff;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 860px;
+            background: rgba(30, 26, 22, 0.76);
+            padding: 55px 45px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1.5px solid rgba(212, 175, 55, 0.45);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero-logo-badge {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 3px solid var(--light-gold);
+            margin: 0 auto 18px;
+            display: block;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.55);
+            object-fit: cover;
+        }
+
+        .hero-tagline {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 4px;
+            color: var(--light-gold);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .hero h1 {
+            font-size: clamp(16px, 2.8vw, 32px);
+            color: #fff;
+            margin-bottom: 10px;
+            line-height: 1.3;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .hero h1 span {
+            color: var(--light-gold);
+            font-style: italic;
+        }
+
+        .hero-slogan {
+            font-size: 21px;
+            color: var(--light-gold);
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            margin-bottom: 35px;
+            color: #f3ede2;
+            line-height: 1.8;
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 18px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 34px;
+            background: var(--primary-gold);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: var(--transition-smooth);
+            border: 1.5px solid var(--primary-gold);
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn:hover {
+            background: var(--dark-gold);
+            border-color: var(--dark-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.75);
+            box-shadow: none;
+        }
+
+        .btn-outline:hover {
+            background: #fff;
+            color: var(--text-dark);
+            border-color: #fff;
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.25);
+        }
+
+        /* Sections */
+        section {
+            padding: 95px 7%;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 60px;
+        }
+
+        .section-tag {
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 3px;
+            color: var(--dark-gold);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-size: 38px;
+            color: var(--dark-gold);
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .section-subtitle {
+            font-style: italic;
+            color: #666;
+            font-size: 16px;
+        }
+
+        .section-divider {
+            width: 70px;
+            height: 2px;
+            background: var(--primary-gold);
+            margin: 18px auto;
+            position: relative;
+        }
+
+        .section-divider::after {
+            content: '❖';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--bg-cream);
+            padding: 0 8px;
+            color: var(--primary-gold);
+            font-size: 13px;
+        }
+
+        /* Heritage Quote */
+        .heritage-quote {
+            background: #f4ecdc;
+            border-left: 4px solid var(--primary-gold);
+            padding: 22px 28px;
+            border-radius: 0 12px 12px 0;
+            margin: 25px 0;
+            font-style: italic;
+            color: #4a3e2c;
+            font-size: 15px;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #fbf6ec;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.15fr;
+            gap: 65px;
+            align-items: center;
+        }
+
+        .about-images {
+            position: relative;
+        }
+
+        .about-img-main {
+            width: 90%;
+            height: 520px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 18px;
+            box-shadow: var(--shadow-subtle);
+            border: 6px solid var(--white);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .about-img-main:hover {
+            transform: scale(1.02);
+        }
+
+        .about-logo-overlay {
+            position: absolute;
+            bottom: -25px;
+            right: 0;
+            width: 175px;
+            height: 175px;
+            border-radius: 50%;
+            border: 5px solid var(--white);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.22);
+            object-fit: cover;
+            background: #fff;
+            animation: floatSlow 6s ease-in-out infinite;
+        }
+
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .about-content h3 {
+            font-size: 32px;
+            color: var(--dark-gold);
+            margin-bottom: 20px;
+            line-height: 1.35;
+        }
+
+        .about-content p {
+            margin-bottom: 18px;
+            color: #4f4f4f;
+            text-align: justify;
+            font-size: 15px;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px dashed #dcd0bc;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .highlight-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark-gold);
+            font-size: 19px;
+            flex-shrink: 0;
+        }
+
+        .highlight-text h5 {
+            font-size: 15px;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .highlight-text span {
+            font-size: 13px;
+            color: #777;
+        }
+
+        /* Collections */
+        .collections {
+            background-color: var(--bg-cream);
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 45px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 9px 24px;
+            background: transparent;
+            border: 1px solid #dcd0bc;
+            border-radius: 25px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 500;
+            color: #555;
+            transition: var(--transition-smooth);
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary-gold);
+            color: #fff;
+            border-color: var(--primary-gold);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25);
+        }
+
+        .collection-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 32px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+            transition: var(--transition-smooth);
+            border: 1px solid #f0e7d5;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+        }
+
+        .product-img-wrapper {
+            position: relative;
+            height: 440px;
+            overflow: hidden;
+            background: #ede6d8;
+            cursor: pointer;
+        }
+
+        .product-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            transition: transform 0.6s ease;
+        }
+
+        .product-card:hover .product-img-wrapper img {
+            transform: scale(1.06);
+        }
+
+        .product-card-zoom-btn {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(44, 44, 44, 0.75);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: var(--transition-smooth);
+            backdrop-filter: blur(4px);
+        }
+
+        .product-card:hover .product-card-zoom-btn {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .product-tag {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(44, 44, 44, 0.8);
+            backdrop-filter: blur(4px);
+            color: var(--light-gold);
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .product-info {
+            padding: 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+
+        .product-title {
+            font-size: 20px;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .product-fabric {
+            font-size: 13px;
+            color: #777;
+            margin-bottom: 14px;
+            line-height: 1.5;
+            min-height: 38px;
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: var(--dark-gold);
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .btn-sm {
+            padding: 10px 22px;
+            font-size: 13px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* Features / Craftsmanship */
+        .craftsmanship {
+            background: linear-gradient(rgba(20, 16, 12, 0.88), rgba(20, 16, 12, 0.93)), url('images/mau-1-cung-dinh.jpg') center 20%/cover fixed;
+            color: #fff;
+            text-align: center;
+        }
+
+        .craftsmanship .section-title {
+            color: var(--light-gold);
+        }
+
+        .craftsmanship .section-subtitle {
+            color: #dedede;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-box {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 14px;
+            padding: 40px 25px;
+            backdrop-filter: blur(6px);
+            transition: var(--transition-smooth);
+        }
+
+        .feature-box:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.12);
+            border-color: var(--primary-gold);
+        }
+
+        .feature-box i {
+            font-size: 40px;
+            color: var(--light-gold);
+            margin-bottom: 20px;
+        }
+
+        .feature-box h4 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+
+        .feature-box p {
+            font-size: 14px;
+            color: #d6d6d6;
+            line-height: 1.6;
+        }
+
+        /* Consultation / Booking */
+        .consultation {
+            background-color: #fbf6ec;
+        }
+
+        .consultation-container {
+            display: grid;
+            grid-template-columns: 1fr 1.25fr;
+            gap: 50px;
+            background: var(--white);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid #ebdcc5;
+        }
+
+        .consultation-banner {
+            background: linear-gradient(135deg, rgba(34, 28, 22, 0.85), rgba(24, 20, 16, 0.93)), url('images/mau-2-nhung-do.png') center top/cover;
+            padding: 50px 40px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .consultation-banner .banner-logo {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            border: 2px solid var(--primary-gold);
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .consultation-banner h3 {
+            font-size: 32px;
+            color: var(--light-gold);
+            margin-bottom: 14px;
+        }
+
+        .consultation-banner p {
+            color: #f0e7d5;
+            margin-bottom: 25px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .info-pill {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 16px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .info-pill i {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light-gold);
+            flex-shrink: 0;
+        }
+
+        .consultation-form {
+            padding: 50px 40px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #444;
+            margin-bottom: 7px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #dcd0bc;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 14px;
+            background: #faf8f4;
+            transition: var(--transition-smooth);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--bg-cream);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-radius: 14px;
+            padding: 35px 28px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid #f0e7d5;
+            position: relative;
+        }
+
+        .quote-icon {
+            font-size: 28px;
+            color: var(--light-gold);
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            font-size: 14px;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 24px;
+            line-height: 1.7;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .client-avatar-badge {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--light-gold), var(--primary-gold));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            border: 2px solid #fff;
+            box-shadow: 0 3px 8px rgba(212, 175, 55, 0.35);
+        }
+
+        .client-name {
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--text-dark);
+        }
+
+        .client-role {
+            font-size: 12px;
+            color: #888;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e1b18;
+            color: #b5aba1;
+            padding: 85px 7% 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 45px;
+            margin-bottom: 50px;
+        }
+
+        .footer-logo-wrap {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo-img {
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            border: 2px solid var(--primary-gold);
+            object-fit: cover;
+        }
+
+        .footer-col h4 {
+            color: var(--light-gold);
+            font-size: 19px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 35px;
+            height: 2px;
+            background: var(--primary-gold);
+        }
+
+        .footer-col p {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 11px;
+        }
+
+        .footer-links a {
+            color: #b5aba1;
+            text-decoration: none;
+            font-size: 14px;
+            transition: var(--transition-smooth);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--light-gold);
+            padding-left: 5px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .social-link {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .social-link:hover {
+            background: var(--primary-gold);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 13px;
+            color: #7d756d;
+        }
+
+        /* Image Lightbox Modal */
+        .lightbox-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.88);
+            backdrop-filter: blur(8px);
+            z-index: 3000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition-smooth);
+            padding: 30px;
+        }
+
+        .lightbox-modal.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 600px;
+            max-height: 90vh;
+            text-align: center;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 12px;
+            border: 3px solid var(--primary-gold);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+
+        .lightbox-caption {
+            color: var(--light-gold);
+            margin-top: 15px;
+            font-size: 18px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -45px;
+            right: 0;
+            font-size: 32px;
+            color: #fff;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .lightbox-close:hover {
+            color: var(--light-gold);
+            transform: scale(1.15);
+        }
+
+        /* Success Alert Toast */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #2e7d32;
+            color: #fff;
+            padding: 16px 24px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 2000;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(20px);
+            transition: var(--transition-smooth);
+        }
+
+        .toast.show {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+            .about-img-main {
+                width: 100%;
+                height: 420px;
+            }
+            .consultation-container {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html, body {
+                width: 100%;
+                overflow-x: hidden;
+            }
+
+            section {
+                padding: 60px 18px;
+            }
+
+            header {
+                padding: 10px 16px;
+            }
+
+            .logo-img {
+                width: 44px;
+                height: 44px;
+            }
+
+            .logo-text .brand-name {
+                font-size: 22px;
+            }
+
+            .logo-text .brand-sub {
+                font-size: 8.5px;
+            }
+
+            nav {
+                position: fixed;
+                top: 66px;
+                left: 0;
+                width: 100%;
+                background: rgba(252, 249, 242, 0.98);
+                backdrop-filter: blur(12px);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+                padding: 25px 0;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: clip-path 0.4s ease-in-out;
+                z-index: 999;
+            }
+
+            nav.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 18px;
+                text-align: center;
+            }
+
+            .menu-toggle {
+                display: block;
+                font-size: 22px;
+            }
+
+            /* Hero on mobile */
+            .hero {
+                padding: 95px 14px 45px;
+                min-height: auto;
+                background-position: center top;
+            }
+
+            .hero-content {
+                padding: 32px 16px 28px;
+                border-radius: 16px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .hero-logo-badge {
+                width: 76px;
+                height: 76px;
+                margin-bottom: 12px;
+            }
+
+            .hero-tagline {
+                font-size: 11px;
+                letter-spacing: 2px;
+                margin-bottom: 8px;
+            }
+
+            .hero h1 {
+                font-size: clamp(14px, 4.3vw, 20px);
+                white-space: nowrap;
+                margin-bottom: 8px;
+                line-height: 1.3;
+            }
+
+            .hero-slogan {
+                font-size: 14.5px;
+                margin-bottom: 16px;
+                letter-spacing: 0.5px;
+            }
+
+            .hero p {
+                font-size: 13.5px;
+                line-height: 1.65;
+                margin-bottom: 25px;
+                padding: 0 4px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 12px;
+                align-items: center;
+                width: 100%;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+                padding: 12px 20px;
+                font-size: 13.5px;
+            }
+
+            .hero-hotline-note {
+                margin-top: 20px;
+                font-size: 13px;
+                line-height: 1.5;
+            }
+
+            /* Section headers */
+            .section-title {
+                font-size: 28px;
+            }
+
+            .section-subtitle {
+                font-size: 14px;
+            }
+
+            /* About Section on mobile */
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-img-main {
+                height: 330px;
+                width: 100%;
+            }
+
+            .about-logo-overlay {
+                width: 100px;
+                height: 100px;
+                bottom: -15px;
+                right: 10px;
+            }
+
+            .about-content h3 {
+                font-size: 24px;
+                line-height: 1.35;
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            /* Collections on mobile */
+            .filter-buttons {
+                gap: 8px;
+                margin-bottom: 30px;
+            }
+
+            .filter-btn {
+                padding: 7px 14px;
+                font-size: 12.5px;
+            }
+
+            .collection-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .product-img-wrapper {
+                height: 380px;
+            }
+
+            /* Craftsmanship on mobile */
+            .craftsmanship {
+                background-attachment: scroll !important;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+                margin-top: 30px;
+            }
+
+            .feature-box {
+                padding: 30px 20px;
+            }
+
+            /* Consultation Form on mobile */
+            .consultation-container {
+                grid-template-columns: 1fr;
+            }
+
+            .consultation-banner {
+                padding: 35px 20px;
+            }
+
+            .consultation-banner h3 {
+                font-size: 24px;
+            }
+
+            .consultation-form {
+                padding: 30px 18px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            /* Testimonials on mobile */
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .testimonial-card {
+                padding: 26px 20px;
+            }
+
+            /* Footer on mobile */
+            footer {
+                padding: 55px 18px 25px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            /* Header actions & Hotline */
+            .header-actions .btn-nav {
+                display: none;
+            }
+
+            .header-hotline .hotline-info {
+                display: none;
+            }
+
+            .header-hotline {
+                padding: 6px;
+            }
+
+            .floating-hotline .hotline-floating-text {
+                display: none;
+            }
+
+            .floating-hotline {
+                bottom: 20px;
+                left: 18px;
+            }
+
+            /* Modal Lightbox on mobile */
+            .lightbox-modal {
+                padding: 15px;
+            }
+
+            .lightbox-content {
+                max-width: 95vw;
+            }
+
+            .lightbox-content img {
+                max-height: 70vh;
+            }
+
+            .lightbox-close {
+                top: -38px;
+                right: 2px;
+                font-size: 28px;
+            }
+        }
+
+        /* Dành riêng cho màn hình điện thoại siêu nhỏ (iPhone SE, Galaxy A, < 380px) */
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 13px;
+                letter-spacing: -0.3px;
+            }
+            .hero-slogan {
+                font-size: 13.5px;
+            }
+            .header-hotline {
+                display: none;
+            }
+            .logo-text .brand-name {
+                font-size: 20px;
+            }
+            .logo-text .brand-sub {
+                font-size: 8px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="navbar">
+        <a href="#home" class="logo-area">
+            <img src="images/logo.jpg" alt="Logo MIHU - Áo Dài Truyền Thống" class="logo-img">
+            <div class="logo-text">
+                <span class="brand-name">MIHU</span>
+                <span class="brand-sub">Áo Dài Truyền Thống</span>
+            </div>
+        </a>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#about">Về MIHU</a></li>
+                <li><a href="#collections">Bộ Sưu Tập</a></li>
+                <li><a href="#craftsmanship">Nghệ Thuật May</a></li>
+                <li><a href="#testimonials">Đánh Giá</a></li>
+                <li><a href="#consultation">Tư Vấn</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <a href="tel:0988123456" class="header-hotline" title="Gọi ngay Hotline tư vấn: 0988.123.456">
+                <span class="hotline-icon"><i class="fa-solid fa-phone-volume"></i></span>
+                <span class="hotline-info">
+                    <span class="hotline-label">Hotline 24/7</span>
+                    <span class="hotline-number">0988.123.456</span>
+                </span>
+            </a>
+            <a href="#consultation" class="btn btn-nav"><i class="fa-solid fa-calendar-check"></i> Đặt May</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="images/logo.jpg" alt="Biểu tượng MIHU" class="hero-logo-badge">
+            <span class="hero-tagline">Tinh Hoa Di Sản Áo Dài Việt</span>
+            <h1>Áo Dài MIHU - <span>Duyên Dáng & Tinh Tế</span></h1>
+            <div class="hero-slogan">"Giữ hồn Việt - Tôn vinh nét đẹp Việt"</div>
+            <p>Trân trọng vẻ đẹp kín đáo, thanh tao và kiêu sa của người phụ nữ Việt Nam qua từng đường kim, thớ lụa tự nhiên thượng hạng cùng sự tỉ mỉ của các nghệ nhân thêu may thủ công.</p>
+            <div class="hero-buttons">
+                <a href="#collections" class="btn"><i class="fa-regular fa-eye"></i> Xem Bộ Sưu Tập</a>
+                <a href="#consultation" class="btn btn-outline"><i class="fa-solid fa-scissors"></i> Đặt May Đo Theo Yêu Cầu</a>
+            </div>
+            <div class="hero-hotline-note">
+                <i class="fa-solid fa-phone"></i> Hotline may đo & tư vấn trực tiếp: 
+                <a href="tel:0988123456">0988.123.456</a> (Hỗ trợ 24/7)
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-grid">
+            <div class="about-images">
+                <img src="images/mau-4-trang-ba-dinh.jpg" alt="Áo Dài MIHU Nét Đẹp Việt Nam" class="about-img-main" onclick="openLightbox('images/mau-4-trang-ba-dinh.jpg', 'Nét đẹp rạng rỡ của người con gái Việt trong tà áo dài truyền thống')">
+                <img src="images/logo.jpg" alt="Logo MIHU Áo Dài Truyền Thống" class="about-logo-overlay">
+            </div>
+            <div class="about-content">
+                <div class="section-header" style="text-align: left; margin-bottom: 20px;">
+                    <span class="section-tag">Câu chuyện thương hiệu</span>
+                    <h2 class="section-title" style="text-align: left;">Thổi Hồn Di Sản Vào Tà Áo Dài Việt Nam</h2>
+                    <div class="section-divider" style="margin-left: 0;"></div>
+                </div>
+                <p>Chiếc áo dài từ bao đời nay đã trở thành biểu tượng thiêng liêng của văn hóa dân tộc — là hiện thân của vẻ đẹp thuần khiết, dịu dàng gắn liền với hoa sen ngát hương, chiếc nón lá mộc mạc và niềm tự hào đất nước.</p>
+                <p>Tại <strong>MIHU</strong>, mỗi tà áo dài được tạo tác không đơn thuần chỉ là trang phục, mà là một tác phẩm nghệ thuật tôn vinh cốt cách người phụ nữ Việt. Chúng tôi lựa chọn lụa tơ tằm Vạn Phúc, gấm dệt hoa văn truyền thống kết hợp cùng nghệ thuật thêu tay thủ công tinh xảo của các nghệ nhân giàu tâm huyết.</p>
+                
+                <div class="heritage-quote">
+                    <i class="fa-solid fa-quote-left" style="color: var(--primary-gold); margin-right: 8px;"></i>
+                    "Giữ trọn hồn thiêng trong từng nếp áo, nâng niu nét duyên Việt rạng rỡ muôn nơi."
+                </div>
+
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon"><i class="fa-solid fa-leaf"></i></div>
+                        <div class="highlight-text">
+                            <h5>100% Lụa Tự Nhiên</h5>
+                            <span>Lụa Vạn Phúc, Bảo Lộc mềm mại, thoáng mát</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon"><i class="fa-solid fa-vest-patches"></i></div>
+                        <div class="highlight-text">
+                            <h5>May Đo Tỉ Lệ Vàng</h5>
+                            <span>Ôm trọn đường cong, tôn dáng tự nhiên</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+                        <div class="highlight-text">
+                            <h5>Thêu Tay Thủ Công</h5>
+                            <span>Họa tiết phượng hoàng, hoa hồng 3D, đóa sen sắc sảo</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon"><i class="fa-solid fa-medal"></i></div>
+                        <div class="highlight-text">
+                            <h5>Bảo Hành Phom Dáng</h5>
+                            <span>Chỉnh sửa trọn đời cho mọi khách may đo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections" id="collections">
+        <div class="section-header">
+            <span class="section-tag">Nét Đẹp Vượt Thời Gian</span>
+            <h2 class="section-title">Bộ Sưu Tập Mẫu Thực Tế</h2>
+            <p class="section-subtitle">Chiêm ngưỡng các thiết kế thực tế tại xưởng may MIHU, chắt lọc tinh hoa từ cổ điển đến đương đại</p>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Tất Cả (5)</button>
+            <button class="filter-btn" data-filter="hoangtrieu">Hoàng Triều & Cung Đình</button>
+            <button class="filter-btn" data-filter="aodaitrang">Áo Dài Trắng Nữ Sinh</button>
+            <button class="filter-btn" data-filter="nhungdo">Nhung The & Thêu Đính</button>
+            <button class="filter-btn" data-filter="luado">Lụa Đỏ Duyên Dáng</button>
+        </div>
+
+        <div class="collection-grid">
+            <!-- Mẫu 1: Áo Dài Cung Đình Phụng Vũ (Huế) -->
+            <div class="product-card" data-category="hoangtrieu">
+                <div class="product-img-wrapper" onclick="openLightbox('images/mau-1-cung-dinh.jpg', 'Áo Dài Cung Đình Phụng Vũ - Di sản Cố Đô Huế')">
+                    <span class="product-tag">Di Sản Hoàng Triều</span>
+                    <img src="images/mau-1-cung-dinh.jpg" alt="Áo Dài Cung Đình Phụng Vũ Cố Đô Huế">
+                    <div class="product-card-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Cung Đình Phụng Vũ</h3>
+                    <p class="product-fabric">Gấm nhung đỏ trầm thêu chim phượng hoàng lộng lẫy, kết hợp tà phụng dài thướt tha và mấn đội đầu hoàng gia tại Cố Đô Huế.</p>
+                    <div class="product-price">5.200.000 ₫</div>
+                    <a href="#consultation" class="btn btn-sm"><i class="fa-solid fa-cart-shopping"></i> Đặt May Thiết Kế Này</a>
+                </div>
+            </div>
+
+            <!-- Mẫu 2: Áo Dài Nhung The Hoa Hồng (Tranh Hạc) -->
+            <div class="product-card" data-category="nhungdo">
+                <div class="product-img-wrapper" onclick="openLightbox('images/mau-2-nhung-do.png', 'Áo Dài Nhung The Quý Tộc - Đính Hoa Hồng 3D')">
+                    <span class="product-tag">Quý Tộc Sang Trọng</span>
+                    <img src="images/mau-2-nhung-do.png" alt="Áo Dài Nhung The Đỏ Hoa Hồng Tranh Hạc">
+                    <div class="product-card-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Nhung The Hoa Hồng Quý Tộc</h3>
+                    <p class="product-fabric">Chất nhung the óng ả mềm mượt, đính kết hoa hồng thủ công 3D trên ngực áo, tôn vinh thần thái kiêu sa, quý phái.</p>
+                    <div class="product-price">3.850.000 ₫</div>
+                    <a href="#consultation" class="btn btn-sm"><i class="fa-solid fa-cart-shopping"></i> Đặt May Thiết Kế Này</a>
+                </div>
+            </div>
+
+            <!-- Mẫu 3: Áo Dài Lụa Đỏ Thêu Hoa Sen (Bên Hồ Sen) -->
+            <div class="product-card" data-category="luado">
+                <div class="product-img-wrapper" onclick="openLightbox('images/mau-3-lua-do.jpg', 'Áo Dài Lụa Đỏ Sen Hồng - Nét Duyên Phố Cổ')">
+                    <span class="product-tag">Bán Chạy Nhất</span>
+                    <img src="images/mau-3-lua-do.jpg" alt="Áo Dài Lụa Đỏ Đầm Sen Cổ Kính">
+                    <div class="product-card-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Lụa Đỏ Duyên Dáng</h3>
+                    <p class="product-fabric">Lụa tơ tằm mềm mại phối họa tiết hoa sen chìm tinh tế, tay lỡ trẻ trung, thanh tao dạo phố hay dự sự kiện trang trọng.</p>
+                    <div class="product-price">2.650.000 ₫</div>
+                    <a href="#consultation" class="btn btn-sm"><i class="fa-solid fa-cart-shopping"></i> Đặt May Thiết Kế Này</a>
+                </div>
+            </div>
+
+            <!-- Mẫu 4: Áo Dài Trắng Ba Đình (Hồn Thiêng Dân Tộc) -->
+            <div class="product-card" data-category="aodaitrang">
+                <div class="product-img-wrapper" onclick="openLightbox('images/mau-4-trang-ba-dinh.jpg', 'Áo Dài Trắng Nữ Sinh Ba Đình - Niềm Tự Hào Việt Nam')">
+                    <span class="product-tag">Biểu Tượng Việt</span>
+                    <img src="images/mau-4-trang-ba-dinh.jpg" alt="Áo Dài Trắng Nữ Sinh Quảng Trường Ba Đình">
+                    <div class="product-card-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Áo Dài Trắng Ba Đình</h3>
+                    <p class="product-fabric">Lụa Bảo Lộc trắng ngọc trai, độ co giãn nhẹ nhàng tôn dáng eo thon, biểu tượng cho nét đẹp thuần khiết và tinh khôi của người con gái Việt.</p>
+                    <div class="product-price">1.950.000 ₫</div>
+                    <a href="#consultation" class="btn btn-sm"><i class="fa-solid fa-cart-shopping"></i> Đặt May Thiết Kế Này</a>
+                </div>
+            </div>
+
+            <!-- Mẫu 5: Áo Dài Trắng Nón Lá Đồng Nội (Hồn Quê) -->
+            <div class="product-card" data-category="aodaitrang">
+                <div class="product-img-wrapper" onclick="openLightbox('images/mau-5-trang-non-la.jpg', 'Áo Dài Trắng Nón Lá Tung Bay Đồng Nội')">
+                    <span class="product-tag">Hồn Quê Duyên Dáng</span>
+                    <img src="images/mau-5-trang-non-la.jpg" alt="Áo Dài Trắng Nón Lá Đồng Lúa Xanh">
+                    <div class="product-card-zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Áo Dài Nón Lá Đồng Nội</h3>
+                    <p class="product-fabric">Lụa tơ tằm hai tà bay bổng trong gió đồng quê, kết hợp cùng nón lá mộc mạc — bức tranh chân phương nhất về vẻ đẹp thục nữ Việt.</p>
+                    <div class="product-price">2.200.000 ₫</div>
+                    <a href="#consultation" class="btn btn-sm"><i class="fa-solid fa-cart-shopping"></i> Đặt May Thiết Kế Này</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Section -->
+    <section class="craftsmanship" id="craftsmanship">
+        <div class="section-header">
+            <span class="section-tag" style="color: var(--light-gold);">Quy Trình Tỉ Mỉ</span>
+            <h2 class="section-title">Nghệ Thuật May Đo Áo Dài Việt</h2>
+            <p class="section-subtitle">Chắt lọc tinh hoa từ các làng nghề truyền thống và kỹ thuật cắt may đỉnh cao</p>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-box">
+                <i class="fa-solid fa-ruler-combined"></i>
+                <h4>Lấy Số Đo 12 Điểm</h4>
+                <p>Khảo sát tỉ lệ chuẩn xác: từ vòng cổ, hạ ngực, eo, mông đến độ rơi của tà, giúp chiếc áo ôm trọn vóc dáng mềm mại mà vẫn nhẹ nhàng cử động.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <h4>Tơ Tằm Thượng Hạng</h4>
+                <p>Tuyển chọn từ những cái nôi dệt lụa nức tiếng Việt Nam: lụa Vạn Phúc, lụa Hà Đông, tơ tằm Bảo Lộc trứ danh không pha sợi hóa học.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa-solid fa-palette"></i>
+                <h4>Nhuộm Màu & Thêu Tay</h4>
+                <p>Sắc màu tự nhiên nhã nhặn, kết hợp đường kim thêu mũi tơ mảnh của nghệ nhân hơn 15 năm kinh nghiệm làng nghề thêu Quất Động.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa-solid fa-shield-heart"></i>
+                <h4>Bảo Hành Tận Tâm</h4>
+                <p>MIHU đồng hành cùng quý cô trọn đời: miễn phí căn chỉnh form dáng, bảo dưỡng đường chỉ và tư vấn phối phụ kiện trọn vẹn.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <span class="section-tag">Tri Ân Khách Hàng</span>
+            <h2 class="section-title">Khách Hàng Nói Về MIHU</h2>
+            <p class="section-subtitle">Niềm tự hào khi đồng hành cùng phụ nữ Việt trong những khoảnh khắc quý giá nhất</p>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="testimonial-text">"Mình đặt may chiếc áo dài cung đình ở MIHU để làm lễ cưới và chụp ảnh tại Đại Nội Huế. Thực sự choáng ngợp trước độ sắc nét của họa tiết thêu phượng hoàng. Phom dáng ôm khít eo mà không hề tức ngực, ai cũng trầm trồ khen ngợi."</p>
+                <div class="client-info">
+                    <div class="client-avatar-badge">TH</div>
+                    <div>
+                        <div class="client-name">Thu Hà</div>
+                        <div class="client-role">Cô dâu tại Hà Nội</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="testimonial-text">"Mẫu áo dài nhung the đỏ thêu hoa 3D mặc lên cực kỳ sang trọng và quý phái. Mình mặc trong sự kiện ngoại giao quốc tế, bạn bè nước ngoài đều dành lời khen ngợi cho nét đẹp văn hóa áo dài Việt Nam."</p>
+                <div class="client-info">
+                    <div class="client-avatar-badge">MP</div>
+                    <div>
+                        <div class="client-name">Mai Phương</div>
+                        <div class="client-role">Giảng viên đại học & Khách ngoại giao</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="testimonial-text">"Áo dài trắng nón lá của MIHU mặc nhẹ tênh, chất lụa mát rượi và tà bay rất tự nhiên. Dịch vụ may đo từ xa nhưng áo gửi về vừa như in từng milimet. Mình nhất định sẽ ủng hộ MIHU lâu dài!"</p>
+                <div class="client-info">
+                    <div class="client-avatar-badge">NL</div>
+                    <div>
+                        <div class="client-name">Ngọc Lan</div>
+                        <div class="client-role">Khách hàng tại TP. Hồ Chí Minh</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation / Booking Form -->
+    <section class="consultation" id="consultation">
+        <div class="consultation-container">
+            <div class="consultation-banner">
+                <img src="images/logo.jpg" alt="MIHU Logo" class="banner-logo">
+                <h3>Đặt Lịch Tư Vấn May Đo</h3>
+                <p>Hãy để MIHU lắng nghe câu chuyện và tôn vinh nét đẹp riêng của bạn. Để lại thông tin để chuyên viên may đo tư vấn chọn vải, mẫu thiết kế hoặc đặt lịch thử áo trực tiếp.</p>
+                
+                <div class="info-pill">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Showroom 1: 88 Phố Huế, Hai Bà Trưng, Hà Nội</span>
+                </div>
+                <div class="info-pill">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Showroom 2: 245 Hai Bà Trưng, Quận 3, TP.HCM</span>
+                </div>
+                <div class="info-pill">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Hotline: 0988.123.456 (8h30 - 21h30)</span>
+                </div>
+                <div class="info-pill">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email: lienhe@mihu.aodai.vn</span>
+                </div>
+            </div>
+
+            <div class="consultation-form">
+                <form id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Họ và tên *</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Nguyễn Thị Lan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Số điện thoại *</label>
+                            <input type="tel" id="phoneNumber" class="form-control" placeholder="09xxxxxxxx" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="serviceType">Mẫu Áo Dài quan tâm</label>
+                            <select id="serviceType" class="form-control">
+                                <option value="mau-1">Mẫu 1: Áo Dài Cung Đình Phụng Vũ (Huế)</option>
+                                <option value="mau-2">Mẫu 2: Áo Dài Nhung The Hoa Hồng Quý Tộc</option>
+                                <option value="mau-3">Mẫu 3: Áo Dài Lụa Đỏ Duyên Dáng Hoa Sen</option>
+                                <option value="mau-4">Mẫu 4: Áo Dài Trắng Nữ Sinh Ba Đình</option>
+                                <option value="mau-5">Mẫu 5: Áo Dài Trắng Nón Lá Đồng Nội</option>
+                                <option value="thiet-ke-rieng">Đặt may thiết kế riêng theo ý muốn</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentDate">Ngày hẹn mong muốn</label>
+                            <input type="date" id="appointmentDate" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Ghi chú thêm (chiều cao, cân nặng, dịp lễ cưới hỏi hoặc màu sắc yêu thích)</label>
+                        <textarea id="notes" class="form-control" rows="3" placeholder="Ví dụ: Cần may dự lễ cưới em gái vào đầu tháng tới, thích tone màu đỏ mận thêu hoa sen..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%; justify-content: center;">
+                        <i class="fa-solid fa-paper-plane"></i> Gửi Yêu Cầu Tư Vấn
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo-wrap">
+                    <img src="images/logo.jpg" alt="Logo Mihu Áo Dài" class="footer-logo-img">
+                    <div class="logo-text">
+                        <span class="brand-name" style="color: var(--light-gold);">MIHU</span>
+                        <span class="brand-sub" style="color: #c9b99f;">Giữ hồn Việt - Tôn vinh nét đẹp Việt</span>
+                    </div>
+                </div>
+                <p>MIHU trân quý từng nét đẹp di sản của tà áo dài Việt Nam, cam kết đem lại những thiết kế thêu may tinh xảo, tôn vinh khí chất thanh tao, thục nữ của phụ nữ Việt khắp năm châu.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Khám Phá</h4>
+                <ul class="footer-links">
+                    <li><a href="#about"><i class="fa-solid fa-angle-right"></i> Về MIHU</a></li>
+                    <li><a href="#collections"><i class="fa-solid fa-angle-right"></i> Bộ Sưu Tập Áo Dài</a></li>
+                    <li><a href="#craftsmanship"><i class="fa-solid fa-angle-right"></i> Nghệ Thuật May Đo</a></li>
+                    <li><a href="#consultation"><i class="fa-solid fa-angle-right"></i> Đặt Lịch Thử Áo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Chính Sách</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i> Bảo hành phom dáng trọn đời</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i> Hướng dẫn lấy số đo online</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i> Giao hàng toàn quốc & Quốc tế</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-right"></i> Bảo mật thông tin</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Hệ Thống Showroom</h4>
+                <p><i class="fa-solid fa-location-dot" style="color: var(--light-gold); margin-right: 8px;"></i> Cơ sở 1: 88 Phố Huế, Hai Bà Trưng, Hà Nội</p>
+                <p><i class="fa-solid fa-location-dot" style="color: var(--light-gold); margin-right: 8px;"></i> Cơ sở 2: 245 Hai Bà Trưng, Quận 3, TP. Hồ Chí Minh</p>
+                <p><i class="fa-solid fa-phone" style="color: var(--light-gold); margin-right: 8px;"></i> Hotline: 0988.123.456</p>
+                <p><i class="fa-solid fa-clock" style="color: var(--light-gold); margin-right: 8px;"></i> Giờ mở cửa: 08:30 - 21:30 hàng ngày</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 MIHU - Áo Dài Truyền Thống. "Giữ hồn Việt - Tôn vinh nét đẹp Việt". All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for High-Res Image Viewing -->
+    <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox(event)">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+            <img src="" alt="Mẫu Áo Dài MIHU" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Nút Hotline Nổi Rung Lắc (Floating Quick Call Widget) -->
+    <a href="tel:0988123456" class="floating-hotline" title="Gọi ngay Hotline tư vấn: 0988.123.456" aria-label="Gọi hotline tư vấn">
+        <span class="hotline-pulse"></span>
+        <span class="hotline-circle">
+            <i class="fa-solid fa-phone"></i>
+        </span>
+        <span class="hotline-floating-text">Hotline: 0988.123.456</span>
+    </a>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toastNotification">
+        <i class="fa-solid fa-circle-check" style="font-size: 20px;"></i>
+        <span id="toastMsg">Gửi thông tin thành công! MIHU sẽ sớm liên hệ với bạn.</span>
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile nav when clicking any link
+        document.querySelectorAll('#navMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Collection Filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                productCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox Modal functions
+        function openLightbox(src, caption) {
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('lightboxCaption').innerText = caption;
+            document.getElementById('lightboxModal').classList.add('active');
+        }
+
+        function closeLightbox(event) {
+            if (event.target.id === 'lightboxModal' || event.target.classList.contains('lightbox-close')) {
+                document.getElementById('lightboxModal').classList.remove('active');
+            }
+        }
+
+        // Close Lightbox with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.getElementById('lightboxModal').classList.remove('active');
+            }
+        });
+
+        // Booking Form Submission & Toast Alert
+        const bookingForm = document.getElementById('bookingForm');
+        const toast = document.getElementById('toastNotification');
+
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('fullName').value;
+
+            // Display Toast
+            document.getElementById('toastMsg').innerText = `Cảm ơn bạn ${name}! MIHU đã nhận được thông tin và sẽ gọi tư vấn trong vòng 15 phút.`;
+            toast.classList.add('show');
+
+            // Reset form
+            bookingForm.reset();
+
+            // Hide toast after 4.5s
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4500);
+        });
+
+        // Navbar shadow on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
+                navbar.style.background = 'rgba(252, 249, 242, 0.98)';
+            } else {
+                navbar.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.05)';
+                navbar.style.background = 'rgba(252, 249, 242, 0.96)';
+            }
+        });
+
+        // Tự động kiểm tra và sửa đường dẫn ảnh nếu xuất web bị thiếu/lệch thư mục
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('img').forEach(img => {
+                img.addEventListener('error', function() {
+                    const src = this.getAttribute('src');
+                    if (!src) return;
+                    const fileName = src.split('/').pop();
+                    
+                    if (!this.dataset.retryCount) {
+                        this.dataset.retryCount = "1";
+                        this.src = './images/' + fileName;
+                    } else if (this.dataset.retryCount === "1") {
+                        this.dataset.retryCount = "2";
+                        this.src = 'images/' + fileName;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
